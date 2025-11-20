@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide </title>
+
+    <style>
+        #mydiv,
+        #slide {
+            padding: 15px;
+            text-align: center;
+            font-size: 25px;
+            background-color: orange;
+            border: 2px solid black;
+        }
+
+        #mydiv {
+            padding: 75px;
+            display: none;
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My Todays Study</h1>
+    <p>Click the below div to slide down...</p>
+    <div id="slide">Slide down by clicking here...</div>
+    <div id="mydiv">This is demo text.</div>
+
+    <script src="./assets/JQ/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#slide").click(function () {
+                $("#mydiv").slideDown();
+            });
+        });
+    </script>
+</body>
+
+</html>

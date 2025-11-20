@@ -35,8 +35,8 @@
 <body>
     <h1>My Todays Study</h1>
     <p>This is a demo text.</p>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <button>Fade Out and Hide visible Elements</button>
+    <p>Show/hide Elements with fadetiggle()</p>
+    <button>Fade Out/In Elements</button>
 
     <div id="div1">Div1</div>
     <div id="div2">Div2</div>
@@ -48,10 +48,10 @@
     <script>
         $(document).ready(function () {
             $("button").click(function () {
-                $("#div1").fadeOut();
-                $("#div2").fadeOut("slow");
-                $("#div3").fadeOut(2000);
-                $("#div4").fadeOut("fast");
+                $("#div1").fadeToggle();
+                $("#div2").fadeToggle("slow");
+                $("#div3").fadeToggle(2000);
+                $("#div4").fadeToggle("fast");
             });
         });
     </script>
